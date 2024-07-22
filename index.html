@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malanca Marco - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+        <!-- Carica tutte le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation Bar for Large Screens -->
+    <div class="hidden sm:block w-full fixed top-0 z-50 bg-black bg-opacity-20 backdrop-blur-md shadow-2xl">
+        <div class="text-md max-w-4xl mx-auto flex justify-center space-x-20 py-4">
+            <a href="#cover" class="text-white text-lg px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-110 hover:bg-white hover:bg-opacity-10 text-shadow-lg">Cover</a>
+            <a href="#about" class="text-white text-lg px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-110 hover:bg-white hover:bg-opacity-10 text-shadow-lg">About me</a>
+            <a href="#education" class="text-white text-lg px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-110 hover:bg-white hover:bg-opacity-10 text-shadow-lg">Education</a>
+            <a href="#work" class="text-white text-lg px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-110 hover:bg-white hover:bg-opacity-10 text-shadow-lg">Work experience</a>
+            <a href="#projects" class="text-white text-lg px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-110 hover:bg-white hover:bg-opacity-10 text-shadow-lg">Projects</a>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="bg-gray-800 shadow-2xl sm:hidden sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                    <!-- Mobile menu button -->
+                    <button type="button" class="menu-button pr-4" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button" aria-label="Open mobile menu">
+                        <span class="sr-only">Toggle main menu</span>
+                        <svg class="block h-6 w-6" id="burger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="hidden h-6 w-6" id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>                                        
+                </div>
+                <div class="flex-1 flex items-start justify-start sm:items-stretch sm:justify-start">
+                    <h1 class="pl-4 text-xl font-semibold">MM</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#cover" aria-label="Navigate to Cover section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cover</a>
+                <a href="#about" aria-label="Navigate to About section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About me</a>
+                <a href="#education" aria-label="Navigate to Education section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Education</a>
+                <a href="#work" aria-label="Navigate to Work section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work experience</a>
+                <a href="#projects" aria-label="Navigate to Projects section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header id="cover" style="background-image: url(./img/bg.webp);" class="text-center py-44 md:py-44 lg:py-80 relative shadow-2xl bg-cover bg-center">
+        <div class="absolute inset-0 bg-black opacity-35"></div> <!-- Overlay semitrasparente -->
+        <h1 class="text-5xl md:text-5xl lg:text-8xl font-bold text-white tracking-wide relative z-10 animate-bounce text-shadow-lg">PORTFOLIO</h1>
+        <p class="text-lg md:text-xl lg:text-2xl font-medium text-white mt-4 md:mt-6 lg:mt-8 relative z-10 text-shadow-lg">Malanca Marco (2024)
+            <a href="https://www.linkedin.com/in/marcomalanca/" target="_blank" class="text-white ml-2 text-shadow-lg">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </p>
+    </header>
+    
+
+    <!-- Main Content Section -->
+    <main class="bg-gray-800 text-justify leading-relaxed py-4">
+
+        <!-- About Me Section -->
+        <section id="about" class="py-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4">ABOUT ME</h2>
+                <p class="text-base md:text-lg lg:text-xl text-white">
+                    Mi chiamo Marco Malanca, ho 21 anni e sono un appassionato Graphic Designer e Full Stack Developer
+                    con un profondo interesse per l'unione tra design e tecnologia.
+                </p>
+                <p class="text-base md:text-lg lg:text-xl text-white mt-4">
+                    La mia esperienza spazia dall'ambito creativo a quello tecnico, consentendomi di creare esperienze
+                    coinvolgenti e funzionali.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4">EDUCATION</h2>
+                <ul class="list-disc text-base md:text-lg lg:text-xl text-white list-inside">
+                    <li class="pb-2 md:pb-4">Corso di specializzazione in Digital Marketing & Graphic Design<br>
+                        Università eCampus 2023 - 2024</li>
+                    <li class="pb-2 md:pb-4">Coding Boot Camp in Sviluppo Web<br>
+                        Aulab S.r.l 2022 - 2022</li>
+                    <li class="pb-2 md:pb-4">Diploma di Maturità Economico e Sociale<br>
+                        Liceo Clemente Rebora 2017 - 2022</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="py-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4">WORK EXPERIENCE</h2>
+                <ul class="list-disc text-base md:text-lg lg:text-xl text-white list-inside">
+                    <li class="pb-2 md:pb-4">Studente tirocinante presso Wrdigital Marketing Agency<br>
+                        Aprile 2024 - Giugno 2024</li>
+                    <li class="pb-2 md:pb-4">Sviluppatore Web Front-End presso Sevenia S.r.l<br>
+                        Marzo 2023 - Settembre 2023</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="bg-gray-100 text-justify leading-relaxed py-4">
+        <section id="projects" class="py-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 pb-6">SOME OF MY PROJECTS</h2>
+                    <div class="py-5 text-md text-white rounded-md bg-gray-800 text-center animate-pulse shadow-xl" role="alert">
+                        <span class="font-semibold mr-2 text-xl text-teal-400"><i class="fa-solid fa-triangle-exclamation"></i></span><p class="">
+                             Click sulle immagini per visualizzare i progetti completi </p>
+                    </div>  
+            </div>
+        </section>
+    
+        <!--APP DESIGN-->
+        <section class="pb-5 pt-2">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-2/3 md:pr-6">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4 text-left md:text-left">APP DESIGN</h2>
+                    <p class="text-base md:text-lg lg:text-xl text-black">
+                        Il progetto, realizzato con Figma, mira a integrare il marchio Blockbuster con funzionalità moderne, 
+                        creando un'interfaccia digitale che ottimizza la navigazione e l'esplorazione dei contenuti. 
+                        Il design accattivante e contemporaneo riflette l'eredità del marchio, migliorando l'accessibilità 
+                        e offrendo un'esperienza utente coinvolgente. L'obiettivo è rendere l'interazione con i contenuti 
+                        più intuitiva e soddisfacente, mantenendo vivo l'interesse per il patrimonio cinematografico di 
+                        Blockbuster attraverso soluzioni innovative, pratiche e all'avanguardia.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 md:pl-6 flex justify-center pt-5">
+                    <img id="view-app-design" class="w-5/6 md:w-5/6 h-auto object-center cursor-pointer" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" src="./img/app design.png" alt="App Design">
+                </div>
+            </div>
+        </section>
+        
+        <!--BROCHURE-->
+        <section class="py-5">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/3 md:pr-6 order-2 md:order-1 flex justify-center pt-5">
+                    <img id="view-brochure" class="w-5/6 md:w-full h-auto object-center rotate-12 cursor-pointer" src="./img/brochure 2.png" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" alt="Brochure">
+                </div>
+                <div class="w-full md:w-2/3 md:pl-6 order-1 md:order-2">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4 text-left md:text-right">BROCHURE</h2>
+                    <p class="text-base md:text-lg lg:text-xl text-black">
+                        Progettazione di un volantino promozionale per la mostra "IdentItalia: Brand Italiani", 
+                        celebrante l'eccellenza e l'identità dei marchi italiani. Con un design coinvolgente e pulito, 
+                        il volantino utilizza immagini suggestive e testi accattivanti per invitare il pubblico a esplorare 
+                        il patrimonio culturale e creativo italiano. Iniziativa che mira a informare e stimolare un profondo 
+                        interesse e connessione emotiva con la tradizione e l'innovazione dei marchi italiani, 
+                        attraverso contenuti visivi e testuali che evidenziano la diversità e l'unicità dei brand. 
+                        Il volantino si propone di essere non solo informativo, ma anche di invitare il pubblico a scoprire e apprezzare 
+                        le storie di successo dietro ogni marchio italiano.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <!--COVER-->
+        <section class="py-5">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-2/3 md:pr-6">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4 text-left md:text-left">BOOK COVER</h2>
+                    <p class="text-base md:text-lg lg:text-xl text-black">
+                        Creazione della copertina per il libro ispirato alla serie di John Wick tramite Adobe InDesign , 
+                        con un design moderno ed essenziale che riflette l'estetica della saga. 
+                        La copertina utilizza colori vibranti ed elementi iconici per aumentare l'attrattiva visiva e catturare l'attenzione 
+                        del lettore. Combinando elementi visivi riconoscibili, la copertina riesce a trasmettere l'essenza del personaggio 
+                        e della narrazione. Il layout della copertina è studiato per essere immediatamente riconoscibile, 
+                        con un'organizzazione degli elementi che guida lo sguardo verso il titolo e il personaggio principale.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 md:pl-6 flex justify-center pt-6">
+                    <img id="view-book-cover" class="w-3/4 md:max-w-full h-auto object-center rotate-1 cursor-pointer" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" src="./img/book cover.png" alt="Cover">
+                </div>
+            </div>
+        </section>
+    
+        <!--FOTORITOCCO-->
+        <section class="py-5">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-4 space-y-4 md:space-y-0">
+                <div class="order-2 md:order-1 w-full md:w-1/2 flex justify-center md:justify-start">
+                    <img class="w-3/4 md:w-56 h-auto object-center mb-4 md:mb-0 pt-6" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" src="./img/fotoritocco 2.jpg" alt="Prima">
+                </div>
+                <div class="order-3 md:order-2 w-full md:w-1/2 flex justify-center">
+                    <img class="w-3/4 md:w-56 h-auto object-center mb-4 md:mb-0 pt-6" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" src="./img/fotoritocco 1.jpg" alt="Dopo">
+                </div>
+                <div class="order-1 md:order-3 w-full md:w-2/3 md:pl-6 mt-6 md:mt-0">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4 text-left md:text-right">FOTORITOCCO</h2>
+                    <p class="text-base md:text-lg lg:text-xl text-black">
+                        Restauro fotografico di un'immagine danneggiata tramite Adobe Photoshop, 
+                        trasformando foto d'epoca in immagini di alta qualità preservandone l'autenticità. 
+                        Il progetto ha richiesto un lavoro tecnico meticoloso e un'attenzione scrupolosa ai dettagli 
+                        per ripristinare la bellezza e l'integrità delle immagini originali.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <!--LOGO DESIGN-->
+        <section class="py-5">
+            <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-2/3 md:pr-6">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 mb-4 text-left md:text-left">LOGO DESIGN</h2>
+                    <p class="text-base md:text-lg lg:text-xl text-black">
+                        Progettazione di un logo per un'attività outdoor, ispirato alla maestosità delle montagne e al fascino dell'avventura. 
+                        Realizzato utilizzando Adobe Illustrator, il logo cattura l'essenza pura della natura e delle esperienze 
+                        all'aria aperta. Questo design mira a creare una connessione 
+                        emotiva profonda con il pubblico target, evocando sentimenti di libertà, esplorazione e rispetto per l'ambiente. 
+                        Ogni dettaglio è studiato per trasmettere un messaggio potente e immediato, garantendo un impatto visivo memorabile
+                        che rispecchia l'identità e i valori dell'attività outdoor.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 md:pl-6 flex justify-center">
+                    <img id="view-logo-design" class="w-full md:max-w-full h-auto object-center pt-5 cursor-pointer" style="filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));" src="./img/logo design.png" alt="Logo Design">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    <footer class="bg-gray-800 text-white text-justify leading-relaxed py-12 shadow-2xl">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-gray-400 mb-2 text-md">malancamarco3@gmail.com</p>
+            <div class="flex items-center mb-2">
+                <p class="text-md">© 2024 Marco Malanca</p>
+                <a href="https://www.linkedin.com/in/marcomalanca/" target="_blank" class="text-white ml-5">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="text-sm text-left pt-6">* Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs. 
+                196/2003 e dell'articolo 13 GDPR 679/16.</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+    <script src="app.js" async></script>
+</body>
+
+</html>
